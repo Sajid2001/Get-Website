@@ -1,0 +1,39 @@
+{
+    "students":[
+        {
+            "id": 0, 
+            "name":"Edrex",
+            "gradYear":"2012",
+            "badges":[
+                "Artist",
+                "Developer",
+                "Actor"
+            ]
+         },
+         {
+            "id": 1, 
+            "name":"Cedric",
+            "gradYear":"2025",
+            "badges":[
+                "Composer"
+            ]
+         },
+         {
+            "id": 2, 
+            "name":"Paul",
+            "gradYear":"2022",
+            "badges":[
+                "Writer",
+                "Developer"
+            ]
+         },
+         {
+            "id": 3, 
+            "name":"Gracielle",
+            "gradYear":"2022",
+            "badges":[
+                "Designer"
+            ]
+         }
+    ]
+}

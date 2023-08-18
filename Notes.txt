@@ -1,0 +1,17 @@
+Important packages installed:
+- React Router
+- TailwindCSS
+- Redux Toolkit
+
+File Structure:
+- Page Components go in the pages folder and componentes nested in those pages go to the Components folder
+- Images and other assets go into the Assets folder
+
+db.json:
+- Currently not connected to any components but can be used as a temporary backend
+- To run, install json-server and run json-server --watch db.json -p 5000
+- This will act as a fake backend until we can figure out content management
+- Can also add project data in this file as well
+
+
+
