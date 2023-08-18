@@ -47,7 +47,7 @@ export default function StudentCard({badges}) {
                 <div className='inline-block my-5 p-3 mx-2'>
                 {visibleBadges.map((badge) => (
                     
-                    <span key={badge} className='inline-flex bg-slate-100 p-1 rounded-xl m-1 text-base items-center'><span className='m-1'>{badge}</span> <img className='h-8' src={badgeImages.Artist}/></span>
+                    <span key={badge} className='inline-flex bg-slate-100 p-1 rounded-xl m-1 text-base items-center'><span className='m-1'>{badge}</span> <img className='h-8' src={badgeImages[badge]}/></span>
                     
                 ))}
 
