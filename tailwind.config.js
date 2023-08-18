@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        petch:['Chakra Petch', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }
