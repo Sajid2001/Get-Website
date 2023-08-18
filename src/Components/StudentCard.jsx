@@ -4,6 +4,10 @@ import {badgeImages} from '../Assets/Imports/BadgeImport'
 
 export default function StudentCard({badges}) {
 
+    const description = `Pursuing a Bachelors of Science
+    in Communication Arts
+    with Minor in Game Design`
+
     const [showAll, setShowAll] = useState(false);
     
     const visibleBadges = showAll ? badges : badges.slice(0, 3);
@@ -13,16 +17,17 @@ export default function StudentCard({badges}) {
       };
 
   return (
-        <div className="my-1 border border-8 border-black max-w-sm dark:bg-navy-800 rounded-[35px] shadow-xl relative mx-auto flex h-full w-full max-w-[550px] flex-col items-center bg-white bg-cover bg-clip-border dark:text-white dark:shadow-none">
-            <div className="rounded-t-3xl relative flex h-48 w-full justify-center bg-cover" style={{ backgroundImage: `url(https://media.discordapp.net/attachments/978748786270695555/1139614209873825892/ditheringinv.png?width=866&height=581)` }}>
-                <div className="absolute -bottom-16 flex h-[140px] w-[140px] items-center justify-center rounded-full border-[6px] border-white bg-pink-400">
+        <div className="font-petch my-1 border border-8 border-black max-w-md dark:bg-navy-800 rounded-[35px] shadow-xl relative mx-auto flex h-full w-full flex-col items-center bg-white bg-cover bg-clip-border dark:text-white dark:shadow-none">
+            <div className="rounded-t-3xl relative flex h-48 w-full justify-center bg-cover" style={{ backgroundImage: `url(https://media.discordapp.net/attachments/978748786270695555/1142156926516461709/ditheringinv.png?width=1440&height=550)` }}>
+                <div className="absolute -bottom-20 flex h-[180px] w-[180px] items-center justify-center rounded-full border-[6px] border-white bg-teal-700">
                 <img className="h-full w-full rounded-full" src={edrex} alt="User Avatar" />
                 </div>
             </div>
-            <div className='mt-16 p-2 flex flex-col items-center'>
+            <div className='mt-24 p-2 flex flex-col items-center'>
                 <div className="text-center">
-                    <h4 className="text-bluePrimary text-xl font-bold">Edrex Fontanilla</h4>
-                    <p className="text-lightSecondary text-base font-normal">Grad 2012</p>
+                    <h4 className="text-2xl font-bold">Edrex Fontanilla</h4>
+                    <p className="text-xl font-normal font-light text-teal-700">Grad 2012</p>
+                    <p className='mx-5 text-base font-light'>{description}</p>
                 </div>
                 <div className="my-4 flex gap-12 md:gap-14">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -42,12 +47,12 @@ export default function StudentCard({badges}) {
                 <div className='inline-block my-5 p-3 mx-2'>
                 {visibleBadges.map((badge) => (
                     
-                    <span key={badge} className='inline-flex bg-slate-100 p-1 rounded-xl m-1 text-sm items-center'><span className='m-1'>{badge}</span> <img className='h-8' src={badgeImages.Artist}/></span>
+                    <span key={badge} className='inline-flex bg-slate-100 p-1 rounded-xl m-1 text-base items-center'><span className='m-1'>{badge}</span> <img className='h-8' src={badgeImages.Artist}/></span>
                     
                 ))}
 
                 {badges.length > 3 &&
-                <button className='w-full mt-5' onClick={handleShowMore}>
+                <button className='w-full text-base mt-5' onClick={handleShowMore}>
                     {showAll ? 'Show Less' : 'Show More'}
                 </button>
                     }
