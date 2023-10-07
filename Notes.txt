@@ -5,7 +5,6 @@ Run npm run dev and the website will be on localhost:3000
 Important packages installed:
 - React Router
 - TailwindCSS
-- Redux Toolkit
 
 File Structure:
 - Page Components go in the pages folder and componentes nested in those pages go to the Components folder

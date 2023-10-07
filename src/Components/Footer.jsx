@@ -11,7 +11,7 @@ export default function Footer() {
             <a href="/" className="flex items-center mb-4 sm:mb-0">
                 <img src={logo} className="h-16 md:h-20 mr-3" alt="GET Logo" />
                 <div>
-                <span className="self-center text-lg md:text-xl font-bold whitespace-nowrap hover:underline">Gaming and Emerging Technology @ SJU</span>
+                <span className="self-center text-md sm:text-lg md:text-xl font-bold whitespace-nowrap hover:underline">Gaming and Emerging Technology @ SJU</span>
                 <p className='text-md md:text-lg font-light'>Inspiring creative minds through innovative collaboration.</p>
                 </div>
             </a>

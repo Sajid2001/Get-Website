@@ -8,7 +8,7 @@ export default function Navbar() {
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-4 pb-2">
     <a href="/" className="flex items-center">
         <img src={logo} className="h-[40px] md:h-[60px] mx-3" alt="GET Logo" />
-        <span className="self-center text-white text-lg md:text-xl whitespace-nowrap hover:text-slate-300 transition-all transition-duration-200 ease-in ">Gaming and Emerging Technology @ SJU</span>
+        <span className="self-center text-white text-md sm:text-lg md:text-xl whitespace-nowrap hover:text-slate-300 transition-all transition-duration-200 ease-in ">Gaming and Emerging Technology @ SJU</span>
     </a>
     <button data-collapse-toggle="navbar-default" type="button" className=" mx-3 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
         <span className="sr-only">Open main menu</span>
