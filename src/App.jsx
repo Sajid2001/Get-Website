@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar"
 import Footer from "./Components/Footer"
 import ProjectPage from "./Pages/ProjectPage"
 import StudentPage from "./Pages/StudentPage"
+import ContactPage from "./Pages/Contact"
 import NotFoundPage from "./Pages/NotFoundPage"
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<HomePage/>}/>
           <Route path="/projects" element={<ProjectPage/>}/>
           <Route path="/students" element={<StudentPage/>}/>
+          <Route path="/contact" element={<ContactPage/>}/>
           <Route path="*" element={<NotFoundPage/>}/>
         </Routes>
       </Router>
